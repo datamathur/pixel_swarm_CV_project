@@ -1,1 +1,4 @@
-# pixel_swarm_CV_project
+# <center>Meta-Heuristic CNNs</center>
+
+**Team Name** - Pixel Swarm
+**Project Title** - Meta-Heuristics vs Backpropagation: A Fresh Look at CNN Model Parameter Optimization for Image Classification.
