@@ -100,5 +100,13 @@ Neural Network model training.</p>
 <h2>6. References</h2>
 
 <ol type="1">
-    <li></li>
-<ol>
+    <li>Z. Michalewicz, Genetic Algorithms + Data Structures = Evolution Programs. Berlin, Heidelberg: Springer Berlin Heidelberg, 1996. doi: https://doi.org/10.1007/978-3-662-03315-9.‌</li>
+    <li>S. Katoch, S. S. Chauhan, and V. Kumar, “A review on genetic algorithm: past, present, and future,” Multimedia Tools and Applications, vol. 80, no. 5, Oct. 2020, doi: https://doi.org/10.1007/s11042-020-10139-6.</li>
+    <li>J. Kennedy and R. Eberhart, “Particle swarm optimization,” Proceedings of ICNN’95 - International Conference on Neural Networks, vol. 4, pp. 1942–1948, 1995, doi: https://doi.org/10.1109/icnn.1995.488968.</li>
+    <li>T. Alam, S. Qamar, A. Dixit, and M. Benaida, “Genetic Algorithm: Reviews, Implementations, and Applications,” Jun. 2020, doi: https://doi.org/10.48550/arxiv.2007.12673.</li>
+    <li>A. G. Gad, “Particle Swarm Optimization Algorithm and Its Applications: A Systematic Review,” Archives of Computational Methods in Engineering, vol. 29, no. 5, pp. 2531–2561, Apr. 2022, doi: https://doi.org/10.1007/s11831-021-09694-4.</li>
+    <li>M. Dorigo, M. Birattari, and T. Stutzle, “Ant colony optimization,” IEEE Computational Intelligence Magazine, vol. 1, no. 4, pp. 28–39, Nov. 2006, doi: https://doi.org/10.1109/MCI.2006.329691.</li>
+    <li>S. Mirjalili, S. M. Mirjalili, and A. Lewis, “Grey Wolf Optimizer,” Advances in Engineering Software, vol. 69, pp. 46–61, Mar. 2014, doi: https://doi.org/10.1016/j.advengsoft.2013.12.007.</li>
+    <li>R. Mohapatra, “rohanmohapatra/torchswarm,” GitHub, Apr. 20, 2024. https://github.com/rohanmohapatra/torchswarm (accessed Apr. 20, 2024).</li>
+    <li>A. P. Sansom, “Torch PSO,” GitHub, Aug. 01, 2022. https://github.com/qthequartermasterman/torch_pso (accessed Apr. 20, 2024).‌</li>
+</ol>
