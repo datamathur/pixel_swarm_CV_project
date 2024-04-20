@@ -1,7 +1,11 @@
 <h1 align="center">Meta-Heuristic CNNs</h1>
+<p align="center"><i>(Utkarsh Mathur)</i></p>
 
 <b>Team Name</b> - Pixel Swarm <br>
+<b>Course</b> - CSE 573: Computer Vision and Image Processing (University at Buffalo, State University of New York)<br>
+<b>Instructor</b> - Dr. Sreyasee Das Bhattacharjee (<b>TA</b> - Bhushan Mahajan)<br>
 <b>Project Title</b> - Meta-Heuristics vs Backpropagation: A Fresh Look at CNN Model Parameter Optimization for Image Classification.<br>
+
 <h4><b>Project Members</b></h4> 
 
 <ol type="1">
