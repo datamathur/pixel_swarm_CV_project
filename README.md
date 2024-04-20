@@ -54,48 +54,68 @@ Neural Network model training.</p>
     optimization techniques in contrast to gradient-based backpropagation techniques.</li>
 </ol>
 
-
 <h2>2. Background</h2>
+<p>N/A</p>
 
 <h3>2.1. Meta-Heuristic Optimization</h3>
+<p>N/A</p>
 
 <h3>2.2. Genetic Algorithm</h3>
+<p>N/A</p>
 
 <h3>2.3. Particle Swarm Optimization</h3>
+<p>N/A</p>
 
 <h3>2.4. Ant Colony Optimization</h3>
+<p>N/A</p>
 
 <h3>2.5. Grey Wolf Optimization</h3>
+<p>N/A</p>
 
 <h3>2.6. Convolutional Neural Networks</h3>
+<p>N/A</p>
 
 <h3>2.7. Image Classification</h3>
+<p>N/A</p>
 
 <h2>3. Methodology</h2>
+<p>N/A</p>
 
 <h3>3.1. Image Classification CNNs</h3>
+<p>N/A</p>
 
 <h3>3.2. Model Training</h3>
+<p>N/A</p>
 
 <h3>3.3. Model Inference</h3>
+<p>N/A</p>
 
 <h2>4. Experiments</h2>
+<p>N/A</p>
 
 <h3>4.1. MNIST LeNet<h3>
+<p>N/A</p>
 
 <h3>4.2. CIFAR-10 LeNet</h3>
+<p>N/A</p>
 
 <h3>4.3. ImageNet AlexNet</h3>
+<p>N/A</p>
 
 <h3>4.4. ImageNet VGG-16</h3>
+<p>N/A</p>
 
 <h3>4.5. ImageNet ResNet-50</h3>
+<p>N/A</p>
 
 <h2>5. Results & Analysis</h2>
+<p>N/A</p>
 
 <h3>5.1. Model Performances</h3>
+<p>N/A</p>
 
 <h3>5.2. Computation Analysis</h3>
+<p>N/A</p>
 
 <h2>6. References</h2>
 
