@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod, ABCMeta
 from typing import Dict, List, Callable, Type, Iterable, Optional
-import torch
-from torch.optim import Optimizer
+import torch # type: ignore
+from torch.optim import Optimizer # type: ignore
 
 def clone_param_group(param_group: Dict) -> Dict:
     """
