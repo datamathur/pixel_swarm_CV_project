@@ -140,4 +140,5 @@ Neural Network model training.</p>
     <li>K. He, X. Zhang, S. Ren, and J. Sun, “Deep Residual Learning for Image Recognition,” arXiv.org, Dec. 10, 2015. https://arxiv.org/abs/1512.03385</li>
     <li>R. Mohapatra, “rohanmohapatra/torchswarm,” GitHub, Apr. 20, 2024. https://github.com/rohanmohapatra/torchswarm (accessed Apr. 20, 2024).</li>
     <li>A. P. Sansom, “Torch PSO,” GitHub, Aug. 01, 2022. https://github.com/qthequartermasterman/torch_pso (accessed Apr. 20, 2024).‌</li>
+    <li>H. Faris, “7ossam81/EvoloPy,” GitHub, Apr. 20, 2024. https://github.com/7ossam81/EvoloPy/tree/master (accessed Apr. 20, 2024).‌</li>
 </ol>
