@@ -84,8 +84,8 @@ class PSO(Optimizer):
 
     @torch.no_grad()
     def step(self, closure: Callable[[], torch.Tensor]):
-        if particle_step_kwargs is None:
-            particle_step_kwargs = {}
+        # if particle_step_kwargs is None:
+        #     particle_step_kwargs = {}
         for particle in self.particles:
             particle_loss = particle.step(closure, self.best_known_global_param_groups)
             if particle_loss < self.best_known_global_loss_value:
