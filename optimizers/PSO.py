@@ -125,6 +125,26 @@ class PSO(Optimizer):
         self.best_known_global_loss_value = torch.inf
 
     @torch.no_grad()
-    def step(self):
-        pass
-    pass
+    def step(self, closure: Callable[[], torch.Tensor]):
+        if particle_step_kwargs is None:
+            particle_step_kwargs = {}
+        for particle in self.particles:
+            particle_loss = particle.step(closure, self.best_known_global_param_groups)
+            if particle_loss < self.best_known_global_loss_value:
+                self.best_known_global_param_groups = clone_param_groups(particle.position)
+                self.best_known_global_loss_value = particle_loss
+
+        # set the module's parameters to be the best performing ones
+        for master_group, best_group in zip(self.param_groups, self.best_known_global_param_groups):
+            clone = clone_param_group(best_group)['params']
+            for i in range(len(clone)):
+                master_group['params'][i].data = clone[i].data
+
+        return closure()  # loss = closure()
+
+    subclasses = []
+
+    def __init_subclass__(cls, **kwargs):
+        super().__init_subclass__(**kwargs)
+        cls.subclasses.append(cls)
+    
