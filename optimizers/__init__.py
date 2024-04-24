@@ -1,4 +1,2 @@
-from .ACO import *
-from .GA import *
-from .GWO import *
+from .GWO import GWO
 from .PSO import PSO

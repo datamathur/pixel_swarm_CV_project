@@ -54,7 +54,7 @@ class Particle:
                     self.param_groups[i]['params'][j].data = self.param_groups[i]['params'][j].data
 
         # Calculate new loss after moving and update the best known position if we're in a better spot
-        new_loss = closure()
+        new_loss = closure(self.position)
         if new_loss < self.best_known_loss_value:
             self.best_known_position = clone_param_groups(self.position)
             self.best_known_loss_value = new_loss
@@ -84,8 +84,6 @@ class PSO(Optimizer):
 
     @torch.no_grad()
     def step(self, closure: Callable[[], torch.Tensor]):
-        if particle_step_kwargs is None:
-            particle_step_kwargs = {}
         for particle in self.particles:
             particle_loss = particle.step(closure, self.best_known_global_param_groups)
             if particle_loss < self.best_known_global_loss_value:
@@ -96,9 +94,9 @@ class PSO(Optimizer):
         for master_group, best_group in zip(self.param_groups, self.best_known_global_param_groups):
             clone = clone_param_group(best_group)['params']
             for i in range(len(clone)):
-                master_group['params'][i].data = clone[i].data
+                master_group['params'][i].copy_(clone[i])
 
-        return closure()  # loss = closure()
+        return closure(self.best_known_global_param_groups)  # loss = closure()
 
     subclasses = []
 
