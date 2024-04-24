@@ -83,7 +83,7 @@ Neural Network model training.</p>
 <p>N/A</p>
 
 <h2>3. Methodology</h2>
-<p>N/A</p>
+<p>Most of the evolutionary optimization algorithms can handle vector and tensors as their population. Model parameters for Deep Learning models usually consists of collections of 3D or 4D tensors of varying dimensionality. To address this we treat the collections parameters atomically (i.e. one convolution layer at a time).</p>
 
 <h3>3.1. Image Classification CNNs</h3>
 <p>N/A</p>
