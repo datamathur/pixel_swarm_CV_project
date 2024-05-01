@@ -10,7 +10,7 @@
 
 <ol type="1">
 <li>Utkarsh Mathur (<a href="https://github.com/datamathur">datamathur</a>, <a href="mailto:umathur@buffalo.edu">umathur@buffalo.edu</a>)</li>
-<li>Mahammad Iqbal Shaik (<a href="mailto:mahammad@buffalo.edu">mahammad@buffalo.edu</a>)</li>
+<li>Mahammad Iqbal Shaik (<a href="https://github.com/iqbal-sk">iqbal-sk</a>, <a href="mailto:mahammad@buffalo.edu">mahammad@buffalo.edu</a>)</li>
 </ol>
 
 <h2>1. Introduction</h2>
