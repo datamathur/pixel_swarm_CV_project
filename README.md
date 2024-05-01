@@ -10,7 +10,7 @@
 
 <ol type="1">
 <li>Utkarsh Mathur (<a href="https://github.com/datamathur">datamathur</a>, <a href="mailto:umathur@buffalo.edu">umathur@buffalo.edu</a>)</li>
-<li>Mahammad Iqbal Shaik (<a href="mailto:mahammad@buffalo.edu">mahammad@buffalo.edu</a>)</li>
+<li>Mahammad Iqbal Shaik (<a href="https://github.com/iqbal-sk">iqbal-sk</a>, <a href="mailto:mahammad@buffalo.edu">mahammad@buffalo.edu</a>)</li>
 </ol>
 
 <h2>1. Introduction</h2>
@@ -62,25 +62,90 @@ Neural Network model training.</p>
 <p>N/A</p>
 
 <h3>2.1. Meta-Heuristic Optimization</h3>
-<p>N/A</p>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>General paradigm</li>
+<li>Use cases</li>
+<li>Advantages and Disadvantages</li>
+</ul>
+</blockquotes>
+</p>
 
 <h3>2.2. Genetic Algorithm</h3>
-<p>N/A</p>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>Intuition</li>
+<li>Algorithm</li>
+<li>Reason for not using for Neural Network Optimization</li>
+</ul>
+</blockquotes>
+</p>
 
 <h3>2.3. Particle Swarm Optimization</h3>
-<p>N/A</p>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>Intuition</li>
+<li>Algorithm</li>
+</ul>
+</blockquotes>
+</p>
 
 <h3>2.4. Ant Colony Optimization</h3>
-<p>N/A</p>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>Intuition</li>
+<li>Algorithm</li>
+<li>Reason for not using for Neural Network Optimization</li>
+</ul>
+</blockquotes>
+</p>
 
 <h3>2.5. Grey Wolf Optimization</h3>
-<p>N/A</p>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>Intuition</li>
+<li>Algorithm</li>
+</ul>
+</blockquotes>
+</p>
 
-<h3>2.6. Convolutional Neural Networks</h3>
-<p>N/A</p>
+<h3>2.6. Backpropagation & Gradient Descent</h3>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>Intuition</li>
+<li>Algorithm</li>
+<li>Advantages and Limitations</li>
+</ul>
+</blockquotes>
+</p>
 
-<h3>2.7. Image Classification</h3>
-<p>N/A</p>
+<h3>2.7. Convolutional Neural Networks</h3>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>Concept</li>
+<li>Advantages and Limitations</li>
+<li>Progress since 1998 (LeNet)</li>
+</ul>
+</blockquotes>
+</p>
+
+<h3>2.8. Image Classification</h3>
+<p>TO BE FILLED <br>
+<blockquotes>
+<ul>
+<li>Explain problem statement.</li>
+<li>Standard datasets</li>
+<li>Mention benchmarks</li>
+</ul>
+</blockquotes>
+</p>
 
 <h2>3. Methodology</h2>
 <p>Most of the evolutionary optimization algorithms can handle vector and tensors as their population. Model parameters for Deep Learning models usually consists of collections of 3D or 4D tensors of varying dimensionality. To address this we treat the collections parameters atomically (i.e. one convolution layer at a time).</p>
