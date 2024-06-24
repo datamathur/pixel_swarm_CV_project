@@ -27,9 +27,9 @@ class GWO(Optimizer):
     def update(self, i: int):
         def _update(worker, feat):
             r1, r2 = randrange(0,1), randrange(0,1)
-            a1, c1 = 2 * self.a * randrange(0,1) - self.a, 2*randrange(0,1)
-            a2, c2 = 2 * self.a * randrange(0,1) - self.a, 2*randrange(0,1)
-            a3, c3 = 2 * self.a * randrange(0,1) - self.a, 2*randrange(0,1)
+            a1, c1 = 2 * self.a * randrange(0,1)/10 - self.a, 2*randrange(0,1)/10
+            a2, c2 = 2 * self.a * randrange(0,1)/10 - self.a, 2*randrange(0,1)/10
+            a3, c3 = 2 * self.a * randrange(0,1)/10 - self.a, 2*randrange(0,1)/10
             x = clone_param_group(worker[feat])['params']
             for f in range(len(worker[feat]['params'])):
                 D1 = c1*self.alpha[feat]['params'][f] - worker[feat]['params'][f]

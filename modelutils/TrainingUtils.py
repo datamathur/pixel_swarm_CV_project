@@ -2,6 +2,7 @@ import torch
 import torch.nn.functional as F
 from tqdm import tqdm
 from typing import Dict, List, Callable, Type, Iterable, Optional
+import matplotlib.pyplot as plt
 
 
 def train(num_epochs, optimizer, model, device, train_loader, val_loader):
@@ -16,6 +17,12 @@ def train(num_epochs, optimizer, model, device, train_loader, val_loader):
         outputs = model(inputs.to(device))
         loss = F.cross_entropy(outputs, labels.to(device))
         return loss
+
+    metric = {
+        "train_loss": [],
+        "val_loss": [],
+        "val_acc": None
+    }
 
     for epoch in tqdm(range(num_epochs)):
         model.train()
@@ -56,7 +63,12 @@ def train(num_epochs, optimizer, model, device, train_loader, val_loader):
         val_accuracy = 100 * correct / total
         print(f'Validation Loss: {avg_val_loss:.3f}, Validation Accuracy: {val_accuracy:.2f}%')
 
+        metric["train_loss"].append(round(running_loss / 100, 3))
+        metric["val_loss"].append(round(avg_val_loss, 3))
+        metric["val_acc"] = val_accuracy
+
     print('Finished Training')
+    return metric
 
 
 def get_device():
@@ -72,3 +84,15 @@ def get_device():
         print("Using CPU")
 
     return device
+
+def plotter(metrics, idx, name, PATH):
+    epoch = len(metrics["train_loss"])
+    plt.plot(range(1, epoch+1), metrics["train_loss"], color = 'orange', label = "Training Loss")
+    plt.plot(range(1, epoch+1), metrics["val_loss"], color = 'blue', label = "Validation Loss")
+    plt.title(name + f" Val Accuracy {metrics['val_acc']}")
+    plt.xlabel("Epochs")
+    plt.ylabel("Loss")
+    plt.legend(loc=1)
+    plt.savefig(PATH + f"Chart {idx}")
+    plt.clf()
+    plt.cla()
