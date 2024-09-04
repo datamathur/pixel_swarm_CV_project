@@ -1,8 +1,3 @@
----
-header-includes:
-  - \usepackage{algorithm2e}
----
-
 <h1 align="center">Meta-Heuristic CNNs</h1>
 <p align="center"><i>(Utkarsh Mathur)</i></p>
 
@@ -187,10 +182,10 @@ by the current iteration and total number of iterations
 $$ w\ =\ 0.9\ -\ 0.5*(\frac{current iteration}{total iterations})$$
 $$ c1\ =\ 3.5\ -\ 3*(\frac{current iteration}{total iterations})$$
 $$ c2\ =\ 0.5\ +\ 3*(\frac{current iteration}{total iterations})$$
-3. Follow the below algorithm to get optimal value:
+1. Follow the below algorithm to get optimal value:
 ![PSO Algorithm Pseudocode](/PSO.png)
 
-4. Return the best positions amongst all particles.
+1. Return the best positions amongst all particles.
 PSO has various advantages like it is derivative free, has very
 few hyperparamaters, is very efficient in global search and is
 insensitive to scaling of design variable. However, it is slow
